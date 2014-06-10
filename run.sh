@@ -13,7 +13,7 @@ if [ ! -z "$GITREPO" ]; then
 	mkdir /var/node
 	git clone $GITREPO /var/node
 	cd /var/node
-	npm install
+	npm install --unsafe-perm
 	bower --allow-root install
 	node app.js
 fi
