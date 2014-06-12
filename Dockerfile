@@ -12,7 +12,7 @@ RUN add-apt-repository ppa:chris-lea/node.js
 RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y nodejs ssh git build-essential python
-RUN apt-get install -y catdoc poppler-utils tesseract-ocr unzip
+RUN apt-get install -y catdoc poppler-utils tesseract-ocr unzip libvips-dev
 RUN mkdir /var/node
 
 ADD ssh_config /etc/ssh/ssh_config
