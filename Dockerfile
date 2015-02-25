@@ -11,7 +11,7 @@ RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:rwky/nodejs-legacy
 RUN echo "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe" >> /etc/apt/sources.list
 RUN apt-get update
-RUN apt-get install -y nodejs ssh git build-essential python
+RUN apt-get install -y nodejs ssh git build-essential python pkg-config
 RUN apt-get install -y catdoc poppler-utils tesseract-ocr unzip
 RUN mkdir /var/node
 RUN curl -s https://raw.githubusercontent.com/lovell/sharp/master/preinstall.sh | bash -
